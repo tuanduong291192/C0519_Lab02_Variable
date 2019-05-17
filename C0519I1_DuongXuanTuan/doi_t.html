@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <h1>ỨNG DỤNG CHUYỂN ĐỔI TIỀN TỆ </h1>
+
+    </tr>
+    <tr>
+        <th><input type="number" id="so_tien"></th>
+        <th><select id="Lan_1">
+            <option value="1">VietnamDong</option>
+            <option value="23000">USD</option>
+            <option value="27000">EUR</option>
+        </select>
+        <th>
+        <th><select id="Lan_2">
+            <option value="1">VietnamDong</option>
+            <option value="23000">USD</option>
+            <option value="27000">EUR</option>
+        </select>
+        </th>
+
+        <td>
+        <th>
+            <button type="button" onclick="get()">Convert</button>
+        </th>
+        </td>
+
+    </tr>
+</table>
+<script>
+function get (){
+    let a = document.getElementById("so_tien").value;
+    let b = document.getElementById("Lan_1").value;
+    let c = document.getElementById("Lan_2").value;
+
+    result = b * c / a;
+    document.('tiền VNĐ:' + result);
+}
+</script>
+</body>
+</html>awrite
